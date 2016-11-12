@@ -1,23 +1,143 @@
 /* Custom Variables*/
-/** Main */
-body {
-  background: #fff;
-  margin: 0;
-  font-family: "Lato", sans-serif;
-  color: #000000; }
 
-.container {
-  width: 100%;
-  min-width: 1060px;
-  margin: 145px auto; }
-  .container .author {
-    color: #b4b4b4; }
-  .container .page-title {
-    font-family: "Shrikhand", cursive;
-    color: #2a2a2a; }
-  .container .page-subtitle {
-    font-family: "Shrikhand", cursive;
-    color: #8f8f8f; }
-  .container .page-content p {
+
+/** Main */
+
+body
+{
+    font-family: 'Lato', sans-serif;
+
+    margin: 0;
+
+    color: #000;
+    background: #303030;
+}
+
+.container
+{
+    position: relative;
+
+    width: 1060px;
+    margin: 145px auto;
+
+    background: #fff;
+}
+
+.container .author
+{
+    font-size: 20px;
+
+    padding-top: 200px;
+    padding-left: 125px;
+
+    color: #b4b4b4;
+}
+
+.container .page-title
+{
+    font-family: 'Shrikhand', cursive;
+    font-size: 78px;
+    line-height: 78px;
+
+    margin-top: 50px;
+    margin-bottom: 0;
+    margin-left: 125px;
+
+    color: #2a2a2a;
+}
+
+.container .page-subtitle
+{
+    font-family: 'Shrikhand', cursive;
+    font-size: 30px;
+    font-weight: 100;
+
     margin-top: 0;
-    margin-bottom: 30px; }
+    margin-left: 125px;
+
+    color: #8f8f8f;
+}
+
+.container .page-content p
+{
+    font-size: 27px;
+    line-height: 41px;
+
+    margin: 0 125px 0 125px;
+    padding-bottom: 35px;
+
+    text-align: justify;
+}
+
+.container .editor
+{
+    position: absolute;
+    top: -102px;
+    right: -70px;
+
+    width: 82.5%;
+    height: 188px;
+
+    background: #181818;
+}
+
+.container .editor p
+{
+    font-size: 15px;
+
+    margin: 0 0 0 67px;
+    padding-top: 30px;
+    padding-bottom: 0;
+
+    color: #575757;
+}
+
+.container .editor input
+{
+    font-size: 48px;
+
+    width: 92%;
+    height: 70px;
+    margin: 0 0 0 67px;
+
+    color: #fff;
+    border: none;
+    border-bottom: 3px solid #303030;
+    outline: none;
+    background: #181818;
+}
+
+.container .editor .properties
+{
+    position: absolute;
+    top: 100%;
+    right: 0;
+
+    width: 92.7%;
+    height: 78px;
+
+    background: #f1b92b;
+}
+
+.container .editor .properties div
+{
+    display: inline-block;
+
+    width: 28px;
+    height: 28px;
+    margin-top: 24px;
+    margin-left: 30px;
+}
+
+.container::before
+{
+    position: absolute;
+    left: 67px;
+
+    width: calc( 100% - 67px);
+    height: 100%;
+
+    content: '';
+
+    border-left: 1px solid #e8ebed;
+}
